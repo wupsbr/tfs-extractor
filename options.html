@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link href="css/bootstrap.css" rel="stylesheet">
+    	<link href="css/bootstrap-grid.css" rel="stylesheet">
+    	<link href="css/bootstrap-reboot.css" rel="stylesheet">
+    </head>
+    <body>
+
+		<div class="container">
+	    
+			<div class="row" style="margin-top: 30px">
+				<h1>TFS Extractor Settings</h1>
+			</div>
+
+			<form>
+
+			  <div class="form-group">
+			    <label for="tfsBaseURL">Base URL</label>
+			    <input type="input" class="form-control" id="tfsBaseURL" name="tfsBaseURL" placeholder="http://your-tfs-server.local/tfs/project-name/">
+			  </div>
+
+			  <div class="form-group">
+			    <label for="tfsAPIKey">Personal Access Token (PAT)</label>
+			    <input type="input" class="form-control" id="tfsAPIKey" name="tfsAPIKey" placeholder="TFS API Key">
+			  </div>
+
+			  <input type="button" id="btnSaveSettings" class="btn btn-primary" value="Save Settings">
+
+			</form>
+
+		</div>
+
+    </body>
+
+	<script src="js/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="options.js"></script>
+  </html>
